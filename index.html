@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="hi"> <!-- root element   -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my webpage</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="favicon" href="logo.png" type="image/x-icon" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- link to external css file -->
+    <style>
+  table,th,td{
+    border:2px solid blue;
+    border-collapse: collapse;
+  }
+
+  td,th{
+    padding:10px;
+    padding-left:40px;
+    padding-right:50px;
+    padding-bottom: 60px;
+    padding-top: 60px;
+    padding: 10px 30px  ;
+    text-align: right;
+   
+  }
+td:nth-child(even), th:nth-child(odd){
+    background-color: rgb(158, 100, 100);
+}
+
+
+  table,th,td{
+  border-left: 1px solid blue;
+  border-collapse: collapse;
+  padding:10px;
+}
+tr:nth-child(even){
+  background-color: rgb(167, 49, 49);
+}
+th{
+  width: 50%;
+}
+form{
+  border:1px solid black;
+  max-width:300px;
+  padding: 30px;
+}
+ 
+body{
+ background-image: url('logo.png')  ;
+  background-repeat: no-repeat;
+
+  background-position: center top;
+
+  background: url('logo.png')  no-repeat  center top;
+  background-size: 150px 150px;
+ 
+}
+
+
+p{
+  color: darkblue;
+  border: 2px none black;
+  max-width: 100px;
+  padding:10px ;
+  background-color: lightslategrey;
+  text-align: center;
+  box-shadow: 1px 5px 7px;
+ border-top-left-radius: 10px;
+ border-bottom-right-radius: 10px;
+
+}
+    a{
+      text-decoration: none;
+    } 
+.cloud:visited:visited{
+      color: salmon;
+
+    }
+    .cloud:link{
+      color:blue
+    }
+   
+    .coud:hover{
+      color: red;
+      background-color: lightgray;
+    }
+    .cloud:active{
+      color: green;
+    }
+
+    #i{
+      color: red;
+    }
+    ul,li{
+      list-style-type: none;
+      display: inline; 
+      font-size: 30px;
+      margin: auto;
+      padding: 50px 50px 10px 50px ;
+      background-color: rgb(155, 205, 233);
+      
+
+    }
+    
+    
+    </style>
+</head>
+
+<body >
+<i >&#1278</i>
+<i >&#128523</i>
+<i class="fa-regular fa-address-book"></i>
+  
+  <ul style="padding-right:35%;">
+        <li class="img"><img src="logo.png" alt="logo" width="100"></li>
+    <li class="list">Home</li>
+    <li class="list">Contact</li>
+    <li class="list">Help</li>
+
+  </ul> 
+
+
+<nav>
+  home
+  contact
+  help
+</nav> 
+
+
+<form >
+  <label for="name">Name:</label>
+  <input type="text" id=" name" placeholder="xyz" required><br><br>
+  <label for="mname">middle:</label>
+  <input type="text" id=" mname" required><br><br>
+  <label for="lname">last name:</label>
+  <input type="text" id=" lname" required><br><br>
+  <input type="submit">
+<input type="number">
+<input type="email">
+<input type="reset">
+<input type="button" value="submit">
+<input type="date"> 
+<input type="file">
+
+
+  
+</form>
+
+<p>what is html?</p>
+<input type="radio" id="radio1" name="name" > 
+<label for="radio1">Hyper text mark up language</label><br>
+<input type="radio" id="radio2" name="name" > 
+<label for="radio2">High text mark up language</label><br>
+<input type="radio" id="radio3" name="name" > 
+<label for="radio3">Hyper text made up language</label><br>
+
+
+<input type="checkbox" id="check1" name="vehicle" value="Bike">
+<label for="check1"> I have a bike</label><br>
+<input type="checkbox" id="check2" name="vehicle" value="Car">    
+<label for="check2"> I have a car</label><br>
+<input type="checkbox" id="check3" name="vehicle" value="Boat"> 
+<label for="check3"> I have a boat</label><br>
+
+<select name="selection" id="se" size="4" multiple>
+  <option value="select" >select </option>
+  <option value="car" selected>car</option>
+  <option value="bike">bike</option>
+  <option value="bus">bus</option>
+  <option value="train">train</option>
+</select>
+
+
+
+
+<table>
+  <tr> 
+   <th>table heading1</th>
+   <th>table heading1</th>
+   <th>table heading1</th>
+  </tr>
+  <tr>
+    <td>cloud </td>
+    <td>institution</td>
+    <td>learning</td>
+
+  </tr>
+  <tr>
+  <td>cloud </td>
+    <td>institution</td>
+    <td>learning</td>
+
+    
+  </tr>
+</table> 
+
+    <h1 style="color:azure">heading1</h1>
+    <h2 >heading2</h2>
+    <h3>heading3</h3>
+    <h4>heading4</h4>
+    <h5>heading5</h5>
+    <h5>heading5</h5>
+    <h6>heading6</h6>
+
+    <p>For Hindi translation in HTML, you primarily use the
+        lang="hi" attribute for language declaration and, more effectively,
+        JavaScript with the Google Translate API (like google.translate.TranslateElement)
+
+        to add dynamic translation widgets, as HTML itself doesn't translate content,
+        but rather defines its structure and language. You'll need to include the API script and a function,
+        plus a for the widget to appear. </p>
+
+    <pre>For Hindi translation in HTML,    you primarily use the 
+    lang="hi" attribute for language declaration and, more effectively, 
+    JavaScript with the Google Translate API (like google.translate.TranslateElement)
+    
+to add dynamic translation widgets, as HTML itself doesn't translate content, 
+but rather defines its structure and language. You'll need to include the API script and a function,
+ plus a for the widget to appear.</pre>
+
+
+
+
+    <span>hello </span>
+    <b>hello </b>
+    <br>
+    <br>
+
+    <a href="https://www.office.com/" target="_top"> click here </a>
+    <br>
+    <img src="logo.png" alt="loading" height="10%" width=20%">
+    <img src="C:\Users\kiran\Downloads\Logo-Cloud-Institute (2).png">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrQmOliev_8meUbWTWZpr0kMwXgnkKZfJsuQ&s">
+
+    <a href="https://www.office.com/"><img src="logo.png" alt="loading" height="10%" width=20%"></a>
+
+    <hr>
+
+
+
+    <a href="https://www.office.com/"><img src="logo.png" alt="loading" height="10%" width=20%"></a>
+
+    <div style="background-color:orange">
+
+        <a href="https://www.office.com/"><img src="logo.png" alt="loading" height="10%" width=20%"></a>
+
+        <h1>hello</h1>
+        <p>this is shweta from cloud institution</p>
+
+    </div> 
+
+3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority 
+
+list  
+ two types 
+ order list   1 2 3 4
+ unorder list 
+  <ol type="1" start="3">
+    <li>apple</li>
+    <li>banana</li>
+    <li>orange </li>
+ </ol>
+
+ <ul style="list-style-type: square ;">
+     <li>apple</li>
+    <li>banana</li>
+    <li>orange </li>
+ </ul>
+
+<li>name</li>
+<li>lastname</li> 
+<abbr title="Hyper text markup language">HTML</abbr>
+
+<p></p>
+<blockquote cite="https://cloudinstitution.com/">At Cloud Institution, your trusted tech education hub in BTM Layout, Bangalore. we provide personalized, hands-on training in AWS, Azure, Google Cloud, DevOps, Java, Data Analytics, Python, Terraform, Kubernetes, and more—blending real-world projects, expert mentorship, and certifications to launch your cloud career.</blockquote>
+
+
+
+<a id="f"class="cloud" href="https://cloudinstitution.com/">cloud institution</a>
+
+<a class="cloud1" href="#">click here</a>
+<a class="cloud3" href="#">submit</a>
+
+<p id="i">hello world</p>
+<p id="u">hello</p>
+<p id="t">hi</p>
+
+<p id="g">3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+
+<br>
+
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+
+<br>
+
+<p>3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</p>
+
+<br>
+
+<p><a href="#f">3 ways we can add the css properties to HTML elements:
+iniline css  it will take 1st priority if you have same property for same tag 
+internal css  2 nd priority if you have same property for same tag
+external css  3rd priority</a></p>
+</body>
+
+
+
+<strong>helo world</strong>
+<b>hello world</b>
+<i>italic</i>
+<em>empasize</em>
+<cite>cite</cite>
+
+<del>hello </del>
+<ins>hello</ins>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/4HRC6c5-2lQ?si=C-FMJfvvVkhXrxcn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<video src="C:\Users\kiran\Downloads\static.mp4" controls width="30%">
+<audio src="C:\Users\kiran\Downloads\flute.mp3" controls >
+
+</audio>
+</html>

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BMW Motorsport</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f4f7ff;
+      color: #0d0d0d;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #08122c;
+      color: white;
+      padding: 18px 60px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    header h2 {
+      letter-spacing: .5px;
+    }
+
+    nav a {
+      color: white;
+      margin-left: 25px;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 70px 25px;
+      background: linear-gradient(to bottom right, #05102a, #0c3c9b);
+      color: white;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+
+    .hero p {
+      opacity: .9;
+      max-width: 650px;
+      margin: auto;
+      font-size: 16px;
+    }
+
+    /* SECTION */
+    .section {
+      padding: 60px 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 25px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 14px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.09);
+      overflow: hidden;
+      transition: .25s;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 16px 30px rgba(0,0,0,0.12);
+    }
+
+    .card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .card-content {
+      padding: 18px;
+    }
+
+    .card-content h3 {
+      margin-bottom: 8px;
+    }
+
+    .card-content p {
+      opacity: .9;
+      margin-bottom: 14px;
+      line-height: 1.4;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #0066ff;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 14px;
+      transition: .2s;
+    }
+
+    .btn:hover {
+      background: #0048b8;
+    }
+
+    footer {
+      background: #08122c;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    footer small {
+      opacity: .7;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h2>BMW Motorsport</h2>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Models</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Ultimate Driving Machine</h1>
+    <p>
+      Explore BMW — world-class engineering, luxury interiors, and powerful performance built for drivers.
+    </p>
+  </section>
+
+  <section class="section">
+    <h2>Featured BMW Models</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="car 2.jpg" alt="BMW Model">
+        <div class="card-content">
+          <h3>BMW M Series</h3>
+          <p>
+            High-performance sports lineup delivering precision handling and aggressive power.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car.png.jpg" alt="BMW Model">
+        <div class="card-content">
+          <h3>BMW 5 Series</h3>
+          <p>
+            Luxury sedan with comfort, technology, and smooth long-distance driving experience.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="car 3.jpeg" alt="BMW Model">
+        <div class="card-content">
+          <h3>BMW X Series</h3>
+          <p>
+            Stylish SUVs combining power, safety, and everyday practicality for families.
+          </p>
+          <a href="#" class="btn">Learn More</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <small>© 2025 BMW Showcase — Educational Demo Website</small>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgba(43, 208, 226,1);
+        }
+
+        #container {
+            display: flex;
+            gap: 5%;
+            text-align: center;
+            justify-content: center;
+        }
+        #container2{
+            margin-top: -10%;
+            display: flex;
+            gap: 16.5%;
+            justify-content: center;
+        }
+        .box {
+            height: 200px;
+            width: 250px;
+            border: none;
+            border-radius: 10px;
+            background-color: black;
+            color: white;
+            font-size: 150px;
+        }
+
+        .cap{
+            color: white;
+            font-size: large;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <p id="d" class="box"></p>
+        <p id="h" class="box"></p>
+        <p id="m" class="box"></p>
+        <p id="s" class="box"></p>
+    </div>
+    <div id="container2">
+        <p class="cap">DAY(S)</p>
+        <p class="cap">HOUR(S)</p>
+        <p class="cap">MINUTE(S)</p>
+        <p class="cap">SECOND(S)</p>
+    </div>
+    <script>
+        function lt() {
+            let now = new Date();
+            document.getElementById("d").innerHTML = "0"+now.getDay();
+            document.getElementById("h").innerHTML = now.getHours();
+            document.getElementById("m").innerHTML = now.getMinutes();
+            document.getElementById("s").innerHTML = now.getSeconds();
+        }
+        setInterval(lt, 1000);
+        lt();
+    </script>
+</body>
+
+<audio controls>
+  <source src="C:\Users\shaik\Downloads\audio" type="audio/ogg">
+  Your browser does not support the audio tag.
+</audio>
+
+</html>
